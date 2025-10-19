@@ -55,7 +55,7 @@ function Slider() {
       <button
         onClick={handlePrev}
         disabled={isFetching || images.length === 0}
-        className={styles.btnLeft}
+        className={styles.btn}
       >
         <FaArrowLeft />
       </button>
@@ -65,7 +65,7 @@ function Slider() {
       <button
         onClick={handleNext}
         disabled={isFetching || images.length === 0}
-        className={styles.btnRight}
+        className={styles.btn}
       >
         <FaArrowRight />
       </button>
