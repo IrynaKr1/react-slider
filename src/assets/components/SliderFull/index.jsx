@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Slider.module.scss';
 import SliderFront from '../SliderFront';
-import defaultImg from '../../imgDefault/default.jpg';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 function Slider() {
   const [images, setImages] = useState([]);
@@ -57,7 +57,7 @@ function Slider() {
         disabled={isFetching || images.length === 0}
         className={styles.btnLeft}
       >
-        Left
+        <FaArrowLeft />
       </button>
 
       <SliderFront image={images[currentIndex]} isLoading={isFetching} />
@@ -67,7 +67,7 @@ function Slider() {
         disabled={isFetching || images.length === 0}
         className={styles.btnRight}
       >
-        Right
+        <FaArrowRight />
       </button>
     </div>
   );

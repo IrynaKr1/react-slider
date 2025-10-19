@@ -18,8 +18,8 @@ function SliderFront({ image, isLoading }) {
   return (
     <figure className={styles.sliderContainer}>
       <img src={image.imageUrl} alt='Image' className={styles.sliderImg} />
-      <figcaption className={styles.sliderDescription}>Author: 
-        {image.author}
+      <figcaption className={styles.sliderDescription}>
+        {`Author: ${image.author}`}
       </figcaption>
     </figure>
   );
