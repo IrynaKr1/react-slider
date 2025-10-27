@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styles from './Slider.module.scss';
-import SliderFront from '../SliderFront';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import styles from './SliderFull.module.scss';
+import SliderFront from '../SliderFront';
 
 function Slider() {
   const [images, setImages] = useState([]);
